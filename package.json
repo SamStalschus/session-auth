@@ -1,0 +1,13 @@
+{
+  "name": "session-auth",
+  "version": "1.0.0",
+  "description": "Session and authenticate",
+  "main": "index.js",
+  "repository": "https://github.com/SamStalschus/session-auth.git",
+  "author": "SamStalschus",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
