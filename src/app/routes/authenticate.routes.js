@@ -1,9 +1,11 @@
 import { Router } from 'express'
 
-import { userAuthenticate } from '../controllers/authenticateController.js'
+import { authenticateController } from '../controllers/authenticateController.js'
 
 const sessionRoutes = Router()
 
-sessionRoutes.get('/sessions', userAuthenticate)
+const authenticate = new authenticateController()
+
+sessionRoutes.get(authenticate.handle)
 
 export { sessionRoutes }

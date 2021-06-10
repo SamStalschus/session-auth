@@ -1,8 +1,9 @@
 
 
 
+export class authenticateController {
 
-export async function userAuthenticate(req, res) {
-
-  res.send({ message: 'Hello World!!!' })
+  async handle(req, res) {
+    res.send({ message: 'Hello World!!!' })
+  }
 }
