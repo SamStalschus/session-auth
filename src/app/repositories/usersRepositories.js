@@ -14,6 +14,11 @@ export default {
   },
 
   async findOne(filter, projection) {
-    return await User.findOne(filter, projection)
+
+    console.log(filter)
+    const user = await User.findOne(filter, projection)
+
+    console.log(user)
+    return user
   }
 }

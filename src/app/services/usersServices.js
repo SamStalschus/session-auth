@@ -8,7 +8,7 @@ export default {
 
   async createUser(user) {
 
-    if (!user.email || !user.password || !user.name)
+    if (!user.email || !user.password || !user.username)
       throw new AppError('Missing Params', 400, 'createUser')
 
     const userAlreadyExists = await usersRepository.findOne({ email: user.email })

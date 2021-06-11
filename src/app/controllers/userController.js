@@ -8,9 +8,9 @@ export default {
 
   async create(req, res) {
     try {
-      const { name, email, password } = req.body
+      const { email, username, password } = req.body
 
-      await usersServices.createUser({ name, email, password })
+      await usersServices.createUser({ email, username, password })
 
       res.send({ message: 'User created!' }).status(201)
     } catch (error) {
