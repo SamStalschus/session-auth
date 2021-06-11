@@ -5,6 +5,6 @@ import userController from '../controllers/userController.js'
 const usersRoutes = Router()
 
 
-usersRoutes.post('/cadastro', userController.create)
+usersRoutes.post('/', userController.create)
 
 export { usersRoutes }
